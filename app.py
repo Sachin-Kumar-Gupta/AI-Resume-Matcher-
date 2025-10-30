@@ -58,7 +58,7 @@ if uploaded_file:
         # ==============================
         if st.button("🔍 Analyze Match"):
             if jd_text.strip():
-                score = calculate_similarity(resume_text, jd_text)
+                score = get_similarity(resume_text, jd_text)
                 
                 # Save to history
                 st.session_state["history"].append({
@@ -120,3 +120,4 @@ if st.button("🗑️ Clear All Results"):
 st.markdown("---")
 
 st.caption("🚀 Built with ❤️ using Streamlit and Hugging Face Transformers by Sachin Kumar Gupta.")
+
