@@ -2,7 +2,7 @@
 # app.py
 
 import streamlit as st
-from model import calculate_similarity
+from model import get_similarity
 from utils import extract_resume_text
 import os
 
@@ -118,4 +118,5 @@ if st.button("🗑️ Clear All Results"):
 # FOOTER
 # ========================================================
 st.markdown("---")
+
 st.caption("🚀 Built with ❤️ using Streamlit and Hugging Face Transformers by Sachin Kumar Gupta.")
