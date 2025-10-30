@@ -7,7 +7,7 @@ from transformers import pipeline
 
 # 1️⃣ PDF & DOCX TEXT EXTRACTION
 
-def extract_text_from_pdf(uploaded_file):
+def extract_text_from_pdf(file):
     """Extracts text from uploaded PDF."""
     reader = PdfReader(file)
     text = ""
@@ -80,3 +80,4 @@ def cosine_similarity(vec1, vec2):
     import numpy as np
     vec1, vec2 = np.array(vec1), np.array(vec2)
     return np.dot(vec1, vec2) / (np.linalg.norm(vec1) * np.linalg.norm(vec2))
+
